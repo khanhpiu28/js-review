@@ -30,7 +30,7 @@ let year;
 console.log(year);
 console.log(typeof year);
 
-year = 1991;
+year = 2025;
 console.log(typeof year);
 
 console.log(typeof null);
@@ -63,3 +63,23 @@ console.log(ageKhanh > agePiu); // >, <, >=, <=
 const isFullAge = agePiu >= 1;
 console.log(now - 2002 > now - 2005);
 
+////////////////////////////////////
+// Strings and Template Literals
+const job = 'student';
+const birthYear = 1991;
+
+const piu = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(piu);
+
+const piuNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(piuNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple
+lines`);
