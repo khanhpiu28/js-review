@@ -86,23 +86,24 @@ lines`);
 
 ////////////////////////////////////
 // Taking Decisions: if / else Statements
-const age = 15;
 
-if (age >= 18) {
-    console.log('You can start driving license 🚗');
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`You is too young. Wait another ${yearsLeft} years :)`);
-}
+// const age = 15;
+
+// if (age >= 18) {
+//     console.log('You can start driving license 🚗');
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`You is too young. Wait another ${yearsLeft} years :)`);
+// }
 
 
-let century;
-if (birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 21;
-}
-console.log(century);
+// let century;
+// if (birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+// console.log(century);
 
 /*
 CHALLENGE #2
@@ -180,3 +181,26 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED');
 }
+
+////////////////////////////////////
+// Equality Operators: == vs. ===
+const age = '18';
+if (age === 18) console.log('You just became an adult :D (strict)');
+
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+    console.log('Cool! 23 is an amazing number!')
+} else if (favorite === 7) {
+    console.log('7 is also a cool number')
+} else if (favorite === 9) {
+    console.log('9 is also a cool number')
+} else {
+    console.log('Number is not 23 or 7 or 9')
+}
+
+if (favorite !== 23) console.log('Why not 23?');
