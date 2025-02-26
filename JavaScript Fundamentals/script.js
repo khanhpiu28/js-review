@@ -62,3 +62,4 @@ console.log(ageKhanh > agePiu); // >, <, >=, <=
 
 const isFullAge = agePiu >= 1;
 console.log(now - 2002 > now - 2005);
+
