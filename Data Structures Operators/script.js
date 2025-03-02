@@ -1,19 +1,19 @@
 "use strict";
 const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-// const openingHours = {
-//   [weekdays[3]]: {
-//     open: 12,
-//     close: 22,
-//   },
-//   [weekdays[4]]: {
-//     open: 11,
-//     close: 23,
-//   },
-//   [weekdays[5]]: {
-//     open: 0, // Open 24 hours
-//     close: 24,
-//   },
-// };
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
 
 const restaurant = {
   name: "Classico Italiano",
@@ -23,22 +23,9 @@ const restaurant = {
   mainMenu: ["Pizza", "Pasta", "Risotto"],
 
   // ES6 enhanced object literals
-  openingHours: {
-    [weekdays[3]]: {
-      open: 12,
-      close: 22,
-    },
-    [weekdays[4]]: {
-      open: 11,
-      close: 23,
-    },
-    [weekdays[5]]: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
+  openingHours,
 
-  order: function (startIndex, mainIndex) {
+  order(startIndex, mainIndex) {
     return [this.starterMenu][startIndex], this.mainMenu[mainIndex];
   },
 
